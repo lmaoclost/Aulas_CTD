@@ -4,54 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu formulário</title>
-    
+
     <!-- Favicon -->
-    <link href="./img/html5_logo.png" rel="shortcut icon">
-    
+    <link href="./images/ifome.png" rel="shortcut icon">
+
     <!-- CSS -->
     <link href="./css/styles.css" rel="stylesheet">
-        
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>iFome</title>
 </head>
 <body>
     <main>
-        <!-- Título -->
-        <h1>Qual é o próximo lanche?</h1>
+        <img src="./images/ifome.png" alt="">
+        <p>A sua fome é o nosso lucro!</p>
 
         <!-- Iniciou o formulário -->
         <form action="#" method="post">
-
             <!-- Texto para o campo de email -->
-            <label for="email">Seu melhor email</label>
+            <label for="email" >Email:</label>
             <!-- Campo de email -->
-            <input type="email" name="email" id="email">
-
+            <input type="email" name="email" id="email" maxlength="5">
+            
             <!-- Texto para o campo de email -->
-            <label for="nome">Seu nome</label>
+            <label for="nome">Nome:</label>
             <!-- Campo de nome -->
             <input type="text" name="nome" id="nome">
 
             <!-- Texto para o campo de email -->
-            <label for="endereco">Endereço complemento</label>
-
+            <label for="endereco">Endereço:</label>
             <!-- Campo de endereço -->
             <textarea name="endereco" id="endereco" cols="30" rows="10"></textarea>
-
+            
             <!-- Abre tag de seleção dos lanches -->
             <select name="lanches" id="lanches">
                 <!-- Lista a opções de lanche -->
-                <option value="">Selecione seu lanche</option>
+                <option value="">Selecione uma opção</option>
                 <option value="hamburguer">Hamburguer</option>
-                <option value="pizza">Pizza</option>
                 <option value="hotdog">hotdog</option>
-                <option value="açai">açai</option>
+                <option value="pastel">pastel</option>
+                <option value="caldo-de-cana">caldo de cana</option>
+                <option value="coxinha">coxinha</option>
             </select>
-            
+
             <!-- Botão que envia os dados -->
             <button type="submit">Enviar</button>
             <!-- Botão que reseta os campos do formulário -->
