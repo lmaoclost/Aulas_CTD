@@ -1,8 +1,8 @@
 # Aulas de Front end do CTD WIP
 
 ## Aulas
-1 a 8 - Tags HTML
-9 - Formulários I
+1 a 8 - Tags HTML.
+9 - Formulários I.
 
 Projetos utilizados como exemplo para o curso CTD.
 
