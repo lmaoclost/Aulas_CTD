@@ -1,0 +1,31 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: #ff2800;
+}
+
+main{
+    text-align: center;
+}
+
+label{
+    display: block;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+textarea{
+    margin-bottom: 15px;
+}
+
+option{
+    display: block;
+}
+
+select{
+    display: block;
+    margin: 0px auto 15px;
+    width: 20%;
+}
