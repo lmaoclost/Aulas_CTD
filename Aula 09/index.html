@@ -20,22 +20,41 @@
 </head>
 <body>
     <main>
+        <!-- Título -->
         <h1>Qual é o próximo lanche?</h1>
+
+        <!-- Iniciou o formulário -->
         <form action="#" method="post">
+
+            <!-- Texto para o campo de email -->
             <label for="email">Seu melhor email</label>
+            <!-- Campo de email -->
             <input type="email" name="email" id="email">
+
+            <!-- Texto para o campo de email -->
             <label for="nome">Seu nome</label>
+            <!-- Campo de nome -->
             <input type="text" name="nome" id="nome">
+
+            <!-- Texto para o campo de email -->
             <label for="endereco">Endereço complemento</label>
+
+            <!-- Campo de endereço -->
             <textarea name="endereco" id="endereco" cols="30" rows="10"></textarea>
+
+            <!-- Abre tag de seleção dos lanches -->
             <select name="lanches" id="lanches">
+                <!-- Lista a opções de lanche -->
                 <option value="">Selecione seu lanche</option>
                 <option value="hamburguer">Hamburguer</option>
                 <option value="pizza">Pizza</option>
                 <option value="hotdog">hotdog</option>
                 <option value="açai">açai</option>
             </select>
+            
+            <!-- Botão que envia os dados -->
             <button type="submit">Enviar</button>
+            <!-- Botão que reseta os campos do formulário -->
             <button type="reset">Cancelar</button>
         </form>
     </main>
