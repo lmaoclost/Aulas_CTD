@@ -1,0 +1,51 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: #ee0e29;
+    padding-bottom: 2%;
+}
+
+main{
+    text-align: center;
+}
+
+.container{
+    padding: 0% 40%;
+}
+
+img{
+    width: 35%;
+}
+
+label{
+    display: block;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+textarea{
+    margin-bottom: 15px;
+}
+
+option{
+    display: block;
+}
+
+select{
+    display: block;
+    margin: 0px auto 15px;
+}
+
+.metodoPagamento label{
+    display: inline-block;
+}
+
+.opcionais label{
+    display: inline-block;
+}
+
+.botoes{
+    margin-top: 5%;
+}

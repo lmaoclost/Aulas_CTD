@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="./images/ifome.png" rel="shortcut icon">
+
+    <!-- CSS -->
+    <link href="./css/styles.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>iFome</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img src="./images/ifome.png" alt="">
+            <p>A sua fome é o nosso lucro!</p>
+
+            <!-- Iniciou o formulário -->
+            <form action="#" method="post">
+                <!-- Seção de dados pessoais -->
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+                    <label for="email">Email:</label>
+                    <!-- Campo de email -->
+                    <input type="email" name="email" id="email" maxlength="5">
+
+                    <!-- Texto para o campo de email -->
+                    <label for="nome">Nome:</label>
+                    <!-- Campo de nome -->
+                    <input type="text" name="nome" id="nome">
+
+                    <!-- Texto para o campo de email -->
+                    <label for="endereco">Endereço:</label>
+                    <!-- Campo de endereço -->
+                    <textarea name="endereco" id="endereco" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <!-- Seção dos pedidos -->
+                <fieldset>
+                    <legend>Escolha seu lanche</legend>
+                    <!-- Abre tag de seleção dos lanches -->
+                    <select name="lanches" id="lanches">
+                        <!-- Lista a opções de lanche -->
+                        <option value="">Selecione uma opção</option>
+                        <optgroup label="fastfood">
+                            <option value="hamburguer">Hamburguer</option>
+                            <option value="hotdog">hotdog</option>
+                        </optgroup>
+                        <optgroup label="fritos">
+                            <option value="pastel">pastel</option>
+                            <option value="caldo-de-cana">caldo de cana</option>
+                            <option value="coxinha">coxinha</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <!-- Seção de pagamento -->
+                <fieldset>
+                    <legend>Metodo de pagamento</legend>
+                    <label for="pagamento"></label>
+                    <div class="metodoPagamento">
+                        <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro" checked>
+                        <label for="dinheiro">Dinheiro</label>
+                        <input type="radio" name="pagamento" id="credito" value="Crédito">
+                        <label for="credito">Crédito</label>
+                        <input type="radio" name="pagamento" id="debito" value="Débito">
+                        <label for="debito">Débito</label>
+                    </div>
+                </fieldset>
+
+                <!-- Seção de informações extras -->
+                <fieldset>
+                    <legend>Informações extras:</legend>
+                    <div class="opcionais">
+                        <input type="checkbox" name="garfo" id="garfo">
+                        <label for="garfo">Garfo</label>
+                        <input type="checkbox" name="faca" id="faca">
+                        <label for="faca">Faca</label>
+                        <input type="checkbox" name="colher" id="colher">
+                        <label for="colher">Colher</label>
+                    </div>
+                </fieldset>
+
+                <!-- Seção de agendamento -->
+                <fieldset>
+                    <legend>Agendar pra quando?</legend>
+                    <input type="date" name="data" id="data">
+                </fieldset>
+
+                <div class="botoes">
+                    <!-- Botão que envia os dados -->
+                    <button type="submit">Enviar</button>
+                    <!-- Botão que reseta os campos do formulário -->
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
