@@ -30,6 +30,7 @@
                 <!-- Seção de dados pessoais -->
                 <fieldset>
                     <legend>Dados pessoais:</legend>
+                    <!-- Texto para o campo de email -->
                     <label for="email">Email:</label>
                     <!-- Campo de email -->
                     <input type="email" name="email" id="email" maxlength="5">
@@ -45,49 +46,56 @@
                     <textarea name="endereco" id="endereco" cols="30" rows="10"></textarea>
                 </fieldset>
 
-                <!-- Seção dos pedidos -->
                 <fieldset>
                     <legend>Escolha seu lanche</legend>
                     <!-- Abre tag de seleção dos lanches -->
                     <select name="lanches" id="lanches">
                         <!-- Lista a opções de lanche -->
                         <option value="">Selecione uma opção</option>
-                        <optgroup label="fastfood">
+                        <optgroup label="Salgados">
                             <option value="hamburguer">Hamburguer</option>
                             <option value="hotdog">hotdog</option>
-                        </optgroup>
-                        <optgroup label="fritos">
                             <option value="pastel">pastel</option>
-                            <option value="caldo-de-cana">caldo de cana</option>
                             <option value="coxinha">coxinha</option>
+                            <option value="sushi">Sushi</option>
+                        </optgroup>
+                        <optgroup label="Doces">
+                            <option value="bolo">Bolo</option>
+                            <option value="tortaLimao">Torta de limão</option>
+                            <option value="churros">Churros</option>
+                            <option value="sonho">Sonho</option>
+                        </optgroup>
+                        <optgroup label="Bebidas">
+                            <option value="coquinhaGelada">Coquinha gelada</option>
+                            <option value="agua">Água</option>
+                            <option value="caldo-de-cana">caldo de cana</option>
                         </optgroup>
                     </select>
                 </fieldset>
 
                 <!-- Seção de pagamento -->
                 <fieldset>
-                    <legend>Metodo de pagamento</legend>
-                    <label for="pagamento"></label>
+                    <legend>Método de pagamento</legend>
                     <div class="metodoPagamento">
-                        <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro" checked>
+                        <input type="radio" name="pagamento" id="dinheiro" value="dinheiro" checked>
                         <label for="dinheiro">Dinheiro</label>
-                        <input type="radio" name="pagamento" id="credito" value="Crédito">
-                        <label for="credito">Crédito</label>
-                        <input type="radio" name="pagamento" id="debito" value="Débito">
+                        <input type="radio" name="pagamento" id="credito" value="credito">
+                        <label for="credito">Credito</label>
+                        <input type="radio" name="pagamento" id="debito" value="debito">
                         <label for="debito">Débito</label>
                     </div>
                 </fieldset>
 
-                <!-- Seção de informações extras -->
+                <!-- Seção de opcionais -->
                 <fieldset>
-                    <legend>Informações extras:</legend>
+                    <legend>Opcionais:</legend>
                     <div class="opcionais">
-                        <input type="checkbox" name="garfo" id="garfo">
-                        <label for="garfo">Garfo</label>
-                        <input type="checkbox" name="faca" id="faca">
-                        <label for="faca">Faca</label>
                         <input type="checkbox" name="colher" id="colher">
                         <label for="colher">Colher</label>
+                        <input type="checkbox" name="garfo" id="garfo">
+                        <label for="garfo">Garfo</label>
+                        <input type="checkbox" name="hashi" id="hashi">
+                        <label for="hashi">Hashi</label>
                     </div>
                 </fieldset>
 

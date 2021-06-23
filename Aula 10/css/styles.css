@@ -2,7 +2,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: white;
     background-color: #ee0e29;
-    padding-bottom: 2%;
 }
 
 main{
@@ -10,11 +9,7 @@ main{
 }
 
 .container{
-    padding: 0% 40%;
-}
-
-img{
-    width: 35%;
+    padding: 0 35%;
 }
 
 label{
@@ -22,11 +17,12 @@ label{
 }
 
 input{
+    padding: 3%;
     margin-bottom: 15px;
 }
 
 textarea{
-    margin-bottom: 15px;
+    margin-bottom: 3%;
 }
 
 option{
@@ -38,11 +34,11 @@ select{
     margin: 0px auto 15px;
 }
 
-.metodoPagamento label{
+.metodoPagamento label {
     display: inline-block;
 }
 
-.opcionais label{
+.opcionais label {
     display: inline-block;
 }
 
