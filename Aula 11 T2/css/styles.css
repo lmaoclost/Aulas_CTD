@@ -1,0 +1,70 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+p::after{
+    content: ' muito de tudo isso!';
+    color: red;
+}
+
+.container{
+    padding: 0 35%;
+}
+
+label{
+    display: block;
+}
+
+input{
+    padding: 1%;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+input:not([type="email"]):not([disabled]):hover{
+    background-color: #ee0e29;
+    color: #fff;
+}
+
+textarea{
+    margin-bottom: 3%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+textarea:hover{
+    background-color: #ee0e29;
+    color: #fff;
+}
+
+option{
+    display: block;
+}
+
+select{
+    display: block;
+    margin: 0px auto 15px;
+    cursor: pointer;
+}
+
+.metodoPagamento label {
+    display: inline-block;
+}
+
+.opcionais label {
+    display: inline-block;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 15px;
+}
+
+input:disabled{
+    background-color: gray;
+    color: white;
+}
