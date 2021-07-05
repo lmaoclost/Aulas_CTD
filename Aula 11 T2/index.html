@@ -35,7 +35,10 @@
                     <input type="email" name="email" id="email">
 
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" disabled>
+
+                    <label for="outro">Outro:</label>
+                    <input type="text" name="outro" id="outro">
 
                     <label for="endereco">Endereço:</label>
                     <textarea name="endereco" id="endereco" cols="30" rows="5"></textarea>
@@ -67,33 +70,29 @@
                 <!-- Seção de Opcionais -->
                 <fieldset>
                     <legend>Opcionais</legend>
-                    <div class="opcionais">
-                        <input type="checkbox" name="colher" id="colher">
-                        <label for="colher">Colher</label>
-                        <input type="checkbox" name="garfo" id="garfo">
-                        <label for="garfo">Garfo</label>
-                        <input type="checkbox" name="hashi" id="hashi">
-                        <label for="hashi">hashi</label>
-                    </div>
+                    <input type="checkbox" name="colher" id="colher">
+                    <label for="colher">Colher</label>
+                    <input type="checkbox" name="garfo" id="garfo">
+                    <label for="garfo">Garfo</label>
+                    <input type="checkbox" name="hashi" id="hashi">
+                    <label for="hashi">hashi</label>
                 </fieldset>
 
                 <!-- Seção de pagamento -->
                 <fieldset>
                     <legend>Método de Pagamento</legend>
-                    <div class="metodoPagamento">
-                        <input type="radio" name="pagamento" id="dinheiro" value="dinheiro" checked>
-                        <label for="dinheiro">Dinheiro</label>
-                        <input type="radio" name="pagamento" id="credito" value="credito">
-                        <label for="credito">Credito</label>
-                        <input type="radio" name="pagamento" id="debito" value="debito">
-                        <label for="debito">Debito</label>
-                    </div>
+                    <input type="radio" name="pagamento" id="dinheiro" value="dinheiro" checked>
+                    <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" name="pagamento" id="credito" value="credito">
+                    <label for="credito">Credito</label>
+                    <input type="radio" name="pagamento" id="debito" value="debito">
+                    <label for="debito">Debito</label>
                 </fieldset>
 
                 <!-- Seção de agendamento -->
                 <fieldset>
                     <legend>Agendar para quando?</legend>
-                    <input type="datetime-local" name="data" id="data" disabled>
+                    <input type="datetime-local" name="data" id="data">
                 </fieldset>
 
                 <!-- Seção de botões -->

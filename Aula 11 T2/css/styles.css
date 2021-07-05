@@ -1,70 +1,63 @@
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ee0e29;
 }
 
 main{
     text-align: center;
 }
 
+img{
+    border-radius: 20%;
+    width: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+img:hover{
+    filter: saturate(0);
+}
+
 p::after{
     content: ' muito de tudo isso!';
-    color: red;
+    color: white;
 }
 
 .container{
-    padding: 0 35%;
+    padding: 0% 30%;
 }
 
-label{
-    display: block;
+legend{
+    text-align: left;
+}
+
+input[type="email"], input[type="text"]{
+    padding: 1%;
+    margin-bottom: 10px;
+    width: 83.3%;
 }
 
 input{
-    padding: 1%;
-    margin-bottom: 15px;
-    transition: all 0.5s ease;
-    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
-input:not([type="email"]):not([disabled]):hover{
+input:not([type="email"]):not([type="datetime-local"]):hover{
     background-color: #ee0e29;
     color: #fff;
-}
-
-textarea{
-    margin-bottom: 3%;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-textarea:hover{
-    background-color: #ee0e29;
-    color: #fff;
-}
-
-option{
-    display: block;
-}
-
-select{
-    display: block;
-    margin: 0px auto 15px;
-    cursor: pointer;
-}
-
-.metodoPagamento label {
-    display: inline-block;
-}
-
-.opcionais label {
-    display: inline-block;
-}
-
-fieldset:last-of-type {
-    margin-bottom: 15px;
 }
 
 input:disabled{
-    background-color: gray;
-    color: white;
+    background: black;
+}
+
+textarea{
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+fieldset:nth-child(1) label{
+    display: block;
+}
+
+fieldset:last-of-type{
+    margin-bottom: 15px;
 }
