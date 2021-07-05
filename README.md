@@ -4,6 +4,9 @@
 * 1 a 8 - Tags HTML.
 * 9 - Formulários I.
 * 10 - Formulários II.
+* 11 - Pseudoclasses pseudoelementos
+* 12 - CSS Animações
+* 13 - Caixas Flexíveis
 
 Projetos utilizados como exemplo para o curso CTD.
 
@@ -20,6 +23,7 @@ Clone esse repositório e veja os códigos funcionando no navegador.
 
 * **Renan Oliveira** - [GitHub](https://github.com/lmaoclost)
 * **Rafa Simas** - [GitHub](https://github.com/Rafaelsimas)
+* **João Pedro** - [GitHub](https://github.com/jotinho3)
 
 ## License
 
