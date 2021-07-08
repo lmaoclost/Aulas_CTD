@@ -1,0 +1,90 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ee0e29;
+    color: white;
+}
+
+main{
+    text-align: center;
+    animation: main 1s;
+}
+
+@keyframes main {
+    from{
+        transform: translatey(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+img{
+    border-radius: 20%;
+    width: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+img:hover{
+    filter: saturate(0);
+    transform: scale(1.1);
+}
+
+p::after{
+    content: ' muito de tudo isso!';
+    color: white;
+}
+
+.container{
+    padding: 0% 30%;
+}
+
+legend{
+    text-align: left;
+}
+
+input[type="email"], input[type="text"]{
+    padding: 1%;
+    margin-bottom: 10px;
+    width: 83.3%;
+}
+
+input, textarea{
+    transition: all 0.5s ease-in-out;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus{
+    transform: scale(1.1);
+    background-color: lightpink;
+}
+
+input:disabled{
+    background: black;
+}
+
+textarea{
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+fieldset:nth-child(1) label{
+    display: block;
+}
+
+fieldset:last-of-type{
+    margin-bottom: 15px;
+}
+
+button{
+    padding: 1.5%;
+    background-color: lightgray;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    border-radius: 5%;
+    border: 2px solid transparent;
+}
+
+button:hover{
+    background-color: #ee0e29;
+    border-color: white;
+    color: white;
+}
