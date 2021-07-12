@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon shortcut" href="./images/ifome.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>iFome</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/ifome.jpg" alt="Logo iFome">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <img src="./images/ifome.jpg" alt="Logo iFome">
+            <p>Gosto</p>
+
+            <!-- Iniciou o formulário -->
+            <form action="#" method="post">
+                <!-- Seção de dados Pessoais -->
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="outro">Outro:</label>
+                    <input type="text" name="outro" id="outro">
+
+                    <label for="endereco">Endereço:</label>
+                    <textarea name="endereco" id="endereco" cols="30" rows="5"></textarea>
+                </fieldset>
+
+                <!-- Seção de Lanches -->
+                <fieldset>
+                    <legend>Escolha seu lanche</legend>
+                    <select name="lanches" id="lanches">
+                        <option value="">Selecione uma opção</option>
+                        <optgroup label="Salgados">
+                            <option value="batataFrita">Batata Frita</option>
+                            <option value="focaccia">Focaccia</option>
+                            <option value="pizza">Pizza</option>
+                            <option value="coxinha">Coxinha</option>
+                            <option value="xBurguer">X-Burguer</option>
+                            <option value="hotFiladelfia">Hot Filadelfia</option>
+                        </optgroup>
+                        <optgroup label="Doces">
+                            <option value="sorvete">Sorvete</option>
+                            <option value="brigadeiro">Brigadeiro</option>
+                            <option value="acai">Açaí</option>
+                            <option value="pacoca">Paçoca</option>
+                            <option value="sonhoChocolate">Sonho de Chocolate</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <!-- Seção de Opcionais -->
+                <fieldset>
+                    <legend>Opcionais</legend>
+                    <input type="checkbox" name="colher" id="colher">
+                    <label for="colher">Colher</label>
+                    <input type="checkbox" name="garfo" id="garfo">
+                    <label for="garfo">Garfo</label>
+                    <input type="checkbox" name="hashi" id="hashi">
+                    <label for="hashi">hashi</label>
+                </fieldset>
+
+                <!-- Seção de pagamento -->
+                <fieldset>
+                    <legend>Método de Pagamento</legend>
+                    <input type="radio" name="pagamento" id="dinheiro" value="dinheiro" checked>
+                    <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" name="pagamento" id="credito" value="credito">
+                    <label for="credito">Credito</label>
+                    <input type="radio" name="pagamento" id="debito" value="debito">
+                    <label for="debito">Debito</label>
+                </fieldset>
+
+                <!-- Seção de agendamento -->
+                <fieldset>
+                    <legend>Agendar para quando?</legend>
+                    <input type="datetime-local" name="data" id="data">
+                </fieldset>
+
+                <!-- Seção de botões -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
