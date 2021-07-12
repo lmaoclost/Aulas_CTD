@@ -2,6 +2,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: white;
     background-color: #ee0e29;
+    font-size: 14px;
 }
 
 main{
@@ -47,31 +48,37 @@ select{
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    html{
+        font-size: 0.5px;
+    }
     body{
         background-color: yellow;
     }
     .container {
-        padding: 0 0rem;
         /* padding: 0 4%; */
     }
 }
 
 @media(min-width: 481px) and (max-width:768px){
+    html{
+        font-size: 3px;
+    }
     body{
         background-color: green;
     }
     .container{
-        padding: 0 5rem;
         /* padding: 0 20%; */
     }
 }
 
 @media(min-width: 769px) and (max-width:1279px){
+    html{
+        font-size: 8px;
+    }
     body{
         background-color: blue;
     }
     .container{
-        padding: 0 15rem;
         /* padding: 0 31%; */
     }
 }
