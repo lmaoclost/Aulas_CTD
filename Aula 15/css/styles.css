@@ -9,7 +9,7 @@ main{
 }
 
 .container{
-    padding: 0 39%;
+    padding: 0 30rem;
 }
 
 label{
@@ -51,7 +51,8 @@ select{
         background-color: yellow;
     }
     .container {
-        padding: 0 4%;
+        padding: 0 0rem;
+        /* padding: 0 4%; */
     }
 }
 
@@ -60,7 +61,8 @@ select{
         background-color: green;
     }
     .container{
-        padding: 0 20%;
+        padding: 0 5rem;
+        /* padding: 0 20%; */
     }
 }
 
@@ -69,15 +71,13 @@ select{
         background-color: blue;
     }
     .container{
-        padding: 0 31%;
+        padding: 0 15rem;
+        /* padding: 0 31%; */
     }
 }
 
 @media(min-width: 1280px){
     body{
         background-color: black;
-    }
-    .container{
-        padding: 0 39%;
     }
 }
