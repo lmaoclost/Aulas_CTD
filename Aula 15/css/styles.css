@@ -47,24 +47,36 @@ select{
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    body{
+        background-color: yellow;
+    }
     .container {
         padding: 0 4%;
     }
 }
 
 @media(min-width: 481px) and (max-width:768px){
+    body{
+        background-color: green;
+    }
     .container{
         padding: 0 20%;
     }
 }
 
 @media(min-width: 769px) and (max-width:1279px){
+    body{
+        background-color: blue;
+    }
     .container{
         padding: 0 31%;
     }
 }
 
 @media(min-width: 1280px){
+    body{
+        background-color: black;
+    }
     .container{
         padding: 0 39%;
     }
