@@ -9,34 +9,35 @@ body{
     background-color: #ee0e29;
 }
 
+p{
+    margin: 10px;
+}
+
 header{
     display: flex;
     align-items: center;
     background-color: white;
+    padding: 15px;
 }
 
 header img{
-    width: 10%;
+    width: 15%;
 }
 
 header nav{
-    justify-content: flex-end;
     width: 100%;
-    padding: 0 5%;
 }
 
 header ul{
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
     list-style-type: none;
 }
 
 header a{
-    padding: 15px;
-    color: black;
+    color:black;
     text-decoration: none;
-    cursor: pointer;
+    padding: 15px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -46,8 +47,8 @@ header a:hover{
 }
 
 main{
-    padding: 25px 0px;
     text-align: center;
+    padding: 20px 0px;
     animation: mainAnimation 2s;
 }
 
@@ -79,7 +80,7 @@ main img{
     }
 }
 
-main img:hover{
+img:hover{
     filter: saturate(0);
 }
 
@@ -92,8 +93,18 @@ p::after{
     padding: 0% 30%;
 }
 
+fieldset{
+    padding: 10px;
+}
+
 legend{
     text-align: left;
+    margin-left: 15px;
+    padding: 0px 10px;
+}
+
+label{
+    padding-bottom: 10px;
 }
 
 input[type="email"], input[type="text"]{
@@ -115,6 +126,10 @@ input:hover, textarea:hover, input:focus, textarea:focus{
 textarea{
     margin-bottom: 10px;
     width: 85%;
+}
+
+fieldset + fieldset{
+    margin: 10px 0;
 }
 
 fieldset:nth-child(1) label{
