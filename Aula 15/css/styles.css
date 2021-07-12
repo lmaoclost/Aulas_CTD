@@ -1,0 +1,71 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: #ee0e29;
+}
+
+main{
+    text-align: center;
+}
+
+.container{
+    padding: 0 39%;
+}
+
+label{
+    display: block;
+}
+
+input{
+    padding: 3%;
+    margin-bottom: 15px;
+}
+
+textarea{
+    margin-bottom: 3%;
+}
+
+option{
+    display: block;
+}
+
+select{
+    display: block;
+    margin: 0px auto 15px;
+}
+
+.metodoPagamento label {
+    display: inline-block;
+}
+
+.opcionais label {
+    display: inline-block;
+}
+
+.botoes{
+    margin-top: 5%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        padding: 0 4%;
+    }
+}
+
+@media(min-width: 481px) and (max-width:768px){
+    .container{
+        padding: 0 20%;
+    }
+}
+
+@media(min-width: 769px) and (max-width:1279px){
+    .container{
+        padding: 0 31%;
+    }
+}
+
+@media(min-width: 1280px){
+    .container{
+        padding: 0 39%;
+    }
+}
