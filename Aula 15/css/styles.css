@@ -6,6 +6,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: white;
     background-color: #ee0e29;
+    font-size: 16px;
 }
 
 main{
@@ -13,6 +14,7 @@ main{
 }
 
 .container{
+    /* padding: 0 35%; */
     padding: 0 30rem;
 }
 
@@ -50,38 +52,32 @@ select{
     margin-top: 5%;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media(min-width: 320px) and (max-width: 480px){
     body{
-        background-color: yellow;
+        background-color: green;
     }
-    .container {
+
+    .container{
         /* padding: 0 4%; */
-        padding: 0 0rem;
+        padding: 0 0.8rem;
     }
 }
 
 @media(min-width: 481px) and (max-width:768px){
     body{
-        background-color: green;
+        background-color: blue;
     }
     .container{
         /* padding: 0 20%; */
         padding: 0 5.5rem;
     }
 }
-
 @media(min-width: 769px) and (max-width:1279px){
     body{
-        background-color: blue;
+        background-color: black;
     }
     .container{
         /* padding: 0 31%; */
-        padding: 0 15rem;
-    }
-}
-
-@media(min-width: 1280px){
-    body{
-        background-color: black;
+        padding: 0 14.5rem;
     }
 }
