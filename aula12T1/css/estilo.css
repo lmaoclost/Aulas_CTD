@@ -1,0 +1,52 @@
+*{/* RESETAR O COMPORTAMENTO DO NAVEGADOR */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{/*ESTILO GLOBAL */
+  margin: 20px;
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+}
+
+#form {/* CONFIGURAÇÃO DA DIV FORM */
+
+  padding: 30px;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+h1{/* CONFIGURAÇÃO DO TÍTULO */
+  margin:0px 0px 20px ;
+  color: purple;
+  transition: all 0.3s ease-in-out;/* TRANSIÇÃO SUAVE */
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password']{/* CONFIGURAÇÃO PARA TODOS OS INPUTS */
+  width: 100%;
+  border: none;
+  background:none ;
+  border-bottom: 1px solid purple;
+  margin-bottom: 30px;
+  color: white;/* essa linha deixa a cor do texto branca */
+  outline: none;
+  transition: all 0.3s ease-in-out;/* TRANSIÇÃO SUAVE */
+  padding: 10px;
+}
+
+.btn{/* CONFIGURAÇÃO PARA TODOS OS BOTÕES COM A CLASSE BTN */
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: purple;
+  color: white;
+  transition: all 0.3s ease-in-out;/* TRANSIÇÃO SUAVE */
+}
+
+

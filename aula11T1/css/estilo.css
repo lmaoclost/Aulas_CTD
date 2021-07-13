@@ -1,0 +1,55 @@
+
+
+container, form{
+  text-align: center;
+}
+
+.center-text{
+ text-align: center;
+}
+
+h1::after{
+content: ' Aqui  com a gente ';
+color: red;
+width: 140px;
+height: 40px;
+}
+
+
+/* input:hover{
+  background-color: lightcoral;
+  width: 421px;
+  border: none;
+} */
+.modelo:hover{
+  background-color: red;
+  
+  border: none;
+}
+
+img{
+  width: 100%;
+}
+
+input{
+  width: 321px;
+  margin-bottom: 30px;
+  padding: 34px;
+transition:  0.5s ease;
+
+}
+
+select {
+  width: 421px;
+  margin-bottom: 30px;
+  padding: 34px;
+}
+
+.btn{
+  text-align: center;
+  padding: 12px;
+}
+
+button{
+  padding: 12px 50px;
+}

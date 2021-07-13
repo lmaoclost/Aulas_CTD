@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MEU CSS -->
+  <link rel="stylesheet" href="./css/estilo.css">
+  <!-- HOVER.CSS -->
+  <link rel="stylesheet" href="./css/hover.css">
+  <!--ANIMATION.CSS -->
+  <link rel="stylesheet" href="./css/animation.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <!-- BOX FORM -->
+  <form method="POST" action="/auth" id="form" class="slide-form" >
+    <h1 class="text-color">Login</h1>
+    <!-- DIV NOME -->
+    <div>
+      <label for="nome">Nome:</label>
+      <input class="hvr-bk" type="text" id="nome" name="nome" placeholder="Your name here">
+    </div>
+     <!-- DIV EMAIL -->
+    <div>
+      <label for="email">Email:</label>
+      <input class="hvr-bk" type="email" id="email" name="email" placeholder="Ycontact@gmail.com">
+    </div>
+     <!-- DIV SENHA -->
+    <div>
+      <label for="senha">Senha:</label>
+      <input class="hvr-bk" type="password" placeholder="***********">
+    </div>
+     <!-- DIV BOTÕES -->
+    <div>
+      <button class="btn hvr-bk-btn" type="submit">Logar</button>
+      <button class="btn hvr-bk-btn" type="reset">Cancelar</button>
+    </div>
+  </form>
+  
+</body>
+</html>
