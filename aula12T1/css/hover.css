@@ -1,0 +1,14 @@
+.text-color:hover{/* HOVER PARA TODOS OS TEXTOS COM ESSA CLASSE */
+  color: white;
+}
+
+.hvr-bk:hover{/* HOVER PARA TODOS OS TEXTOS COM ESSA CLASSE */
+  background-color: purple;
+  border-radius: 5px;
+}
+
+.hvr-bk-btn:hover{/* HOVER PARA TODOS OS TEXTOS COM ESSA CLASSE */
+  background-color: white;
+  color: purple;
+  font-weight: bold;
+}

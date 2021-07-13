@@ -1,0 +1,23 @@
+.slide-form {
+  animation-duration: 1s;/* DURAÇÃO DA ANIMAÇÃO */
+  animation-name: slidein;/* NOME DA ANIMAÇÃO */
+ 
+}
+
+@keyframes slidein {/* EXECUÇÃO DA ANIMAÇÃO */
+  from {
+    margin-top: -100%;
+  }
+
+  to {
+    margin-top: 1%;
+  }
+}
+
+/* from{
+  margin-left: -100%;
+}
+
+to{
+  margin-left: 25%;
+} */
