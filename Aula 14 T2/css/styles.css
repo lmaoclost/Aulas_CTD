@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0c0b0b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+h1, h2, h3{
+    color: white;
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+strong{
+    color: red;
+}
+
+header a{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    padding: 10px 30px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+header a:hover{
+    background-color: red;
+    color: black;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 4px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card-grid{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+    text-align: center;
+}
+
+.card-game img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid lightgray;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-game img:hover{
+    transform: scale(1.1);
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 10px 90px;
+    font-weight: bold;
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.btn:hover{
+    background: red;
+    color: white;
+}
+
+#rpg + #rts{
+    margin-top: 30px;
+}
