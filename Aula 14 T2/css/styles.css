@@ -5,22 +5,26 @@
     list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    scroll-padding: 30px;
 }
 
 body{
-    background-color: #0c0b0b;
+    background-color: #131010;
     font-family: 'Open Sans', sans-serif;
 }
 
-#header{
+/* menu superior */
+
+header{
     display: flex;
     position: sticky;
     top: 0;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
+    padding: 20px;
     flex-wrap: wrap;
     background-color: black;
+    z-index: 1;
 }
 
 h1, h2, h3{
@@ -30,7 +34,7 @@ h1, h2, h3{
     text-align: center;
 }
 
-strong{
+header h1::first-letter{
     color: red;
 }
 
@@ -48,40 +52,43 @@ header a:hover{
     color: black;
 }
 
-.menu{
+ul{
     display: flex;
 }
 
-.menu li{
+ul li{
     margin-left: 4px;
 }
 
-.menu li a{
-    display: block;
+ul li a{
     padding: 10px;
 }
 
-#main{
+/* parte principal do site */
+
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    padding: 0 60px;
 }
 
 .card-grid{
-    margin-top: 60px;
     display: grid;
+    margin-top: 40px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 18px;
+    gap: 18px;
     text-align: center;
 }
 
 .card-game img{
     height: 350px;
     width: 100%;
-    object-fit: cover;
     border: 1px solid lightgray;
+    object-fit: cover;
+    text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
@@ -94,15 +101,15 @@ header a:hover{
     padding: 10px 90px;
     font-weight: bold;
     border-radius: 9px;
-    transition: all 0.3s ease-in-out;
     border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover{
-    background: red;
+    background-color: red;
     color: white;
 }
 
 #rpg + #rts{
-    margin-top: 30px;
+    margin-top: 60px;
 }
