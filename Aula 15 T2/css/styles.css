@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+
+body{
+    background-color: #131010;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* menu superior */
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: black;
+    z-index: 1;
+}
+
+h1, h2, h3{
+    color: white;
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+header h1::first-letter{
+    color: red;
+}
+
+header a{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    padding: 10px 30px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+header a:hover{
+    background-color: red;
+    color: black;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    margin-left: 4px;
+}
+
+ul li a{
+    padding: 10px;
+}
+
+/* parte principal do site */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#banner{
+    background:url(https://www.copeltelecom.com/site/wp-content/uploads/2019/12/GettyImages-1036204436.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2::first-letter, h3::first-letter{
+    color: red;
+}
+
+#banner h2{
+    color: white;
+    padding: 5%;
+    background: rgba(19, 22, 19, 0.5)
+}
+
+#banner + #rpg{
+    margin-top: 60px;
+}
+
+.container{
+    max-width: 700px;
+}
+
+.card-grid{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    text-align: center;
+}
+
+.card-game img{
+    height: 350px;
+    width: 100%;
+    border: 1px solid lightgray;
+    object-fit: cover;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-game img:hover{
+    transform: scale(1.1);
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 10px 90px;
+    font-weight: bold;
+    border-radius: 9px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+
+#rpg + #rts{
+    margin-top: 60px;
+}
+
+@media (max-width: 333px) {
+    ul li a {
+        padding: 5px;
+    }
+}
+
+@media(max-width: 475px){
+    header {
+        justify-content: center;
+    }
+    header h1{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 615px){
+    #banner {
+        height: 50vh;
+    }
+
+    .card-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .container{
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 614px) and (max-width: 830px){
+    .card-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        max-width: 530px;
+    }
+}
