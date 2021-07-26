@@ -1,0 +1,66 @@
+@import '../colors/colors.scss';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    h3 {
+        &::first-letter {
+            color: red;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    li {
+        margin-left: 4px;
+        a {
+            display: block;
+            padding: 10px;
+        }
+    }
+}
+
+a {
+    color: $black;
+    font-family: 'Manrope', sans-serif;
+    padding: 10px 30px;
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    &:hover {
+        background-color: red;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.btn {
+    &-info {
+        background: $gray;
+    }
+    &-danger {
+        background: $purple;
+    }
+}
+
+article {
+    +article {
+        margin-top: 30px;
+    }
+}
