@@ -6,10 +6,6 @@
     list-style-type: none;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
 #header {
     display: flex;
     position: sticky;
@@ -20,33 +16,33 @@ body {
     flex-wrap: wrap;
     h3 {
         &::first-letter {
-            color: red;
+            color: $red;
+        }
+        &:hover {
+            color: $blue;
         }
     }
-}
-
-.menu {
-    display: flex;
-    li {
-        margin-left: 4px;
-        a {
-            display: block;
-            padding: 10px;
+    .menu {
+        display: flex;
+        li {
+            margin-left: 4px;
+            a {
+                display: block;
+                padding: 10px;
+            }
         }
     }
 }
 
 a {
-    color: $black;
-    font-family: 'Manrope', sans-serif;
+    color: $purple;
     padding: 10px 30px;
     border-radius: 9px;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
     &:hover {
-        background-color: red;
-        color: black;
-        font-weight: bold;
+        background-color: $red;
+        color: $black;
     }
 }
 
@@ -55,11 +51,12 @@ a {
         background: $gray;
     }
     &-danger {
-        background: $purple;
+        background: $red;
     }
 }
 
 article {
+    background-color: $gray;
     +article {
         margin-top: 30px;
     }
